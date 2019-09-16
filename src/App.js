@@ -116,9 +116,9 @@ function App() {
           <Col style={{ textAlign: "right" }}><h3>Output</h3></Col>
           <Col>
           <Row>
-            <Col><Button variant={(knnPrediction===1 ? "success" : "secondary")}>Class 1</Button></Col>
-            <Col><Button variant={(knnPrediction===2 ? "success" : "secondary")}>Class 2</Button></Col>
-            <Col><Button variant={(knnPrediction===3 ? "success" : "secondary")}>Class 3</Button></Col>
+            <Col><Button variant={(parseInt(knnPrediction)===1 ? "success" : "secondary")}>Class 1</Button></Col>
+            <Col><Button variant={(parseInt(knnPrediction)===2 ? "success" : "secondary")}>Class 2</Button></Col>
+            <Col><Button variant={(parseInt(knnPrediction)===3 ? "success" : "secondary")}>Class 3</Button></Col>
           </Row>
           {/* <div width={350}><p style={{fontSize:48}}>{knnPrediction}</p></div> */}
           </Col>
